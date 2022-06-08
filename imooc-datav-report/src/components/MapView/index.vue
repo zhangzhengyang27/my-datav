@@ -29,9 +29,9 @@
 </template>
 
 <script>
-  import BMapScatter from '../BMapScatter'
-  import LiquidFill from '../LiquidFill'
-  import WordCloud from '../WordCloud'
+  import BMapScatter from './BMapScatter'
+  import LiquidFill from './LiquidFill'
+  import WordCloud from './WordCloud'
 
   export default {
     components: {

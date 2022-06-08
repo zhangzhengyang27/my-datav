@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import commonDataMixin from '../../mixins/commonDataMixin'
+  import commonDataMixin from '../../../mixins/commonDataMixin'
 
   const convertData = function (data, geo) {
     const res = []
@@ -30,7 +30,7 @@
     data() {
       return {
         title: {
-          text: '慕课外卖销售数据大盘',
+          text: '销售数据大盘',
           subtext: '销售趋势统计',
           sublink: 'https://www.imooc.com',
           left: 'center'
@@ -154,6 +154,7 @@
             type: 'scatter',
             coordinateSystem: 'bmap',
             data: convertData(data, geo),
+            // 选取第二个数据
             encode: {
               value: 2
             },
@@ -170,6 +171,7 @@
                 return `${v.data.name} - ${v.data.value[2]}`
               }
             },
+            // 正常情况下不显示，只有放上去才会显示
             emphasis: {
               label: {
                 show: true
@@ -197,6 +199,7 @@
               show: true
             },
             hoverAnimation: true,
+            // 波纹的样式
             rippleEffect: {
               brushType: 'stroke'
             },

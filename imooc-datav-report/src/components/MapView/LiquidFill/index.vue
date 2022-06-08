@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import commonDataMixin from '../../mixins/commonDataMixin'
+  import commonDataMixin from '../../../mixins/commonDataMixin'
   function getColor(value) {
     return value > 0 && value <= 0.5 ? 'rgba(97,216,0,.7)'
       : value > 0.5 && value <= 0.8 ? 'rgba(204,178,26,.7)'
