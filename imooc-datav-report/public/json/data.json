@@ -1,0 +1,60 @@
+{
+  userToday: 1779279,
+  userLastDay: 1000000,
+  userLastMonth: 800000,
+  userGrowthLastDay: "77.91"
+  …
+}
+age: [{key: "0-20", value: 314669}, {key: "20-30", value: 514359}, {key: "30-50", value: 735534},…]
+areaSales: [{order: "北京 -13%", shop: "北京 +16%", rider: "北京 +24%", newShop: "北京 +17%", avgOrder: "北京 +14%"}, …]
+areaTop: [{city: "北京", rate: "+19%", …}, {city: "上海", rate: "+3%", …}, {city: "广州", rate: "-14%", …}, …]
+averageAge: "30.10"
+category: {, …}
+covertRate: "11.25"
+devices: [{key: "Android", value: 529872}, {key: "iOS", value: 479981}, {key: "PC", value: 379233}]
+gender: [{key: "male", value: 889468}, {key: "female", value: 889811}]
+growthLastDay: "77.93"
+growthLastMonth: "122.41"
+orderFullYear: [410, 82, 200, 334, 390, 330, 220, 150, 82, 200, 134, 290]
+orderFullYearAxis: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
+0: "1月"
+1: "2月"
+2: "3月"
+3: "4月"
+4: "5月"
+5: "6月"
+6: "7月"
+7: "8月"
+8: "9月"
+9: "10月"
+10: "11月"
+11: "12月"
+orderGrowthLastDay: "77.33"
+orderGrowthLastMonth: "121.66"
+orderLastDay: 2000000
+orderLastMonth: 1600000
+orderPrice: 17
+orderRank: [{no: 1, name: "肯德基", money: "323,234"}, {no: 2, name: "麦当劳", money: "299,132"}, …]
+orderToday: 3546569
+orderTrend: [620, 432, 220, 534, 790, 430, 220, 320, 532, 320, 834, 690, 530, 220, 620]
+orderUser: 766080
+orderUserTrend: [410, 82, 200, 334, 390, 330, 220, 150, 82, 200, 134, 290, 330, 150]
+orderUserTrendAxis: ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", …]
+realTimeOrder: 648
+returnRate: "5.14"
+rider: {axisX: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"], …
+}
+salesGrowthLastDay: "92.44"
+salesGrowthLastMonth: "148.85"
+salesLastDay: 30000000
+salesLastMonth: 23200000
+salesToday: 57733497
+totalDevices: 1389086
+userFullYear: [110, 120, 90, 220, 175, 212, 192, 95, 88, 120, 250, 310]
+userFullYearAxis: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
+userGrowthLastDay: "77.91"
+userGrowthLastMonth: "122.39"
+userLastDay: 1000000
+userLastMonth: 800000
+userRank: [{no: 1, name: "麦当劳", money: "211,335"}, {no: 2, name: "肯德基", money: "210,597"}, …]
+userToday: 1779279
