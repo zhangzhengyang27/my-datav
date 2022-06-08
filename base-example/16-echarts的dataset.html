@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="./js/echarts.js"></script>
+    <style>
+        #chart {
+            width: 800px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div id="chart"></div>
+<script>
+    const chartDom = document.getElementById('chart')
+    const chart = echarts.init(chartDom)
+    const option = {
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {},
+        dataset: {
+            source: [
+                ['一季度', 79, 100, '分类1', 50],
+                ['二季度', 81, 112, '分类2', 60],
+                ['三季度', 88, 96, '分类3', 55],
+                ['四季度', 72, 123, '分类4', 70],
+            ]
+        },
+        series: [{
+            type: 'pie',
+            center: ['65%', 60],
+            radius: 35,
+            encode: {itemName: 3, value: 4}
+        }, {
+            type: 'line',
+            encode: {x: 0, y: 2}
+        }, {
+            type: 'bar',
+            encode: {x: 0, y: 1}
+        }]
+    }
+    chart.setOption(option)
+</script>
+</body>
+</html>

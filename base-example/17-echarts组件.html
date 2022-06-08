@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="./js/echarts.js"></script>
+    <style>
+        #chart {
+            width: 800px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div id="chart"></div>
+<script>
+    const chartDom = document.getElementById('chart')
+    const chart = echarts.init(chartDom)
+    const option = {
+        title: {
+            text: '数据可视化',
+            subtext: '慕课网数据可视化体系课'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {},
+        legend: {
+            data: [{
+                name: '分类',
+                // 强制设置图形为圆。
+                icon: 'circle',
+                // 设置文本为红色
+                textStyle: {
+                    color: 'red'
+                }
+            }, '折线图', '柱状图'],
+            left: 100
+        },
+        toolbox: {
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                restore: {},
+                saveAsImage: {}
+            }
+        },
+        dataZoom: [{
+            show: true,
+            start: 30,
+            end: 70
+        }],
+        dataset: {
+            source: [
+                ['一季度', 79, 100, '分类1', 50],
+                ['二季度', 81, 112, '分类2', 60],
+                ['三季度', 88, 96, '分类3', 55],
+                ['四季度', 72, 123, '分类4', 70],
+            ]
+        },
+        grid: [{
+            left: 50,
+            top: 70
+        }],
+        series: [{
+            name: '分类',
+            type: 'pie',
+            center: ['65%', 60],
+            radius: 35,
+            encode: {itemName: 3, value: 4}
+        }, {
+            name: '折线图',
+            type: 'line',
+            encode: {x: 0, y: 2}
+        }, {
+            name: '柱状图',
+            type: 'bar',
+            encode: {x: 0, y: 1}
+        }]
+    }
+    chart.setOption(option)
+</script>
+</body>
+</html>
